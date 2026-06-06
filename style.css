@@ -145,6 +145,8 @@ main.project-group .project-container {
 	flex-direction: column;
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	text-decoration: none;
+	color: inherit;
 }
 
 main.project-group .project-container:hover {
@@ -156,9 +158,8 @@ main.project-group .project-container:hover {
 .preview-wrap {
 	position: relative;
 	width: 100%;
-	aspect-ratio: 4 / 3;
+	aspect-ratio: 3 / 2;
 	overflow: hidden;
-	background: #222;
 	flex-shrink: 0;
 }
 
@@ -166,9 +167,8 @@ main.project-group .project-container:hover {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 200%;
-	height: 200%;
-	transform: scale(0.5);
+	width: 600px;
+	height: 400px;
 	transform-origin: top left;
 	border: none;
 	pointer-events: none;
@@ -185,21 +185,21 @@ main.project-group .project-container:hover {
 	flex: 1;
 }
 
-main.project-group .project-container:nth-child(1) .card-footer {
+main.project-group .project-container:nth-child(1) {
 	background-color: var(--skyblue);
 }
 
-main.project-group .project-container:nth-child(2) .card-footer {
+main.project-group .project-container:nth-child(2) {
 	background-color: var(--orange);
 	color: var(--ivory);
 }
 
-main.project-group .project-container:nth-child(3) .card-footer {
+main.project-group .project-container:nth-child(3) {
 	background-color: var(--brown);
 	color: var(--ivory);
 }
 
-main.project-group .project-container:nth-child(4) .card-footer {
+main.project-group .project-container:nth-child(4) {
 	background-color: var(--black);
 	color: var(--ivory);
 }

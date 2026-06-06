@@ -16,5 +16,10 @@
     <p class="project-description">베지어 곡선으로 머리카락을 섬세하게 표현한 인물 캐릭터 드로잉입니다.<br/>얼굴, 눈, 코, 입술, 옷, 헤어핀까지 p5.js 도형으로 직접 구현했습니다.</p>
   </header>
   <script src="./sketch.js"></script>
+  <script>
+    if (new URLSearchParams(location.search).get('embed') === '1') {
+      document.querySelector('header').style.display = 'none';
+    }
+  </script>
 </body>
 </html>

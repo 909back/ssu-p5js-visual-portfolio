@@ -16,5 +16,10 @@
     <p class="project-description">과제 2의 캐릭터에 인터랙션을 추가했습니다.<br/>C 키로 고양이, M 키로 버섯을 마우스에 붙여 움직이고, 캐릭터 얼굴 위로 가져가면 눈과 입 표정이 바뀝니다.</p>
   </header>
   <script src="./sketch.js"></script>
+  <script>
+    if (new URLSearchParams(location.search).get('embed') === '1') {
+      document.querySelector('header').style.display = 'none';
+    }
+  </script>
 </body>
 </html>

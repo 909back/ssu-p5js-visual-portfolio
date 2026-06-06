@@ -16,5 +16,10 @@
     <p class="project-description">산과 눈 덮인 풍경을 배경으로 아델리 펭귄을 p5.js 도형으로 추상화하여 표현한 정적 스케치입니다.<br/>삼각형으로 산을, arc와 ellipse로 펭귄의 얼굴과 몸을 구성했습니다.</p>
   </header>
   <script src="./sketch.js"></script>
+  <script>
+    if (new URLSearchParams(location.search).get('embed') === '1') {
+      document.querySelector('header').style.display = 'none';
+    }
+  </script>
 </body>
 </html>
